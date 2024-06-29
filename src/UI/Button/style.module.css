@@ -1,0 +1,35 @@
+.buttonContainer {
+	width: 250px;
+	height: 64px;
+	border-radius: 4px;
+	background-color: var(--light-gray);
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.buttonContainer > span {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: var(--black);
+}
+
+.buttonContainer:not(.blueButton) {
+	background-color: var(--white);
+	border: 1px solid var(--mid-grey);
+}
+
+.buttonContainer.blueButton {
+	background-color: var(--primary);
+}
+
+.buttonContainer.blueButton > span {
+	color: var(--white);
+}
+
+.buttonContainer.blueButton:hover {
+	background-color: var(--primary-hover);
+	color: var(--white);
+}

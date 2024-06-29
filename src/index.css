@@ -1,8 +1,44 @@
 @import url('./fonts.css');
 
+:root {
+	--black: #191C1F;
+	--dark-gray: #5E646A;
+	--gray: #83898F;
+	--mid-grey: #C2C8CD;
+	--light-gray: #ECEFF2;
+	--extralight-gray: #F6F8FA;
+	--white: #FFFFFF;
+	--dangerous: #F13636;
+	--green-success: #25CD82;
+	--primary-disabled: #ABCAE6;
+	--primary: #2A6CEA;
+	--primary-hover: #397DFF;
+}
+
 * {
 	margin: 0;
 	font-family: 'Graphik LCG', sans-serif;
 	padding: 0;
-	box-sizing: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: var(--white);
+}
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	min-width: 320px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.center-content {
+	position: relative;
+	max-width: 1216px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	padding: 0px 5px;
 }

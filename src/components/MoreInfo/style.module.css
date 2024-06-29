@@ -1,0 +1,21 @@
+.moreInfoContainer {
+	background-color: var(--extralight-gray);;
+}
+
+.containerInfo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.containerInfo > li {
+	width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+	.containerInfo > li {
+		width: 100%;
+	}
+}

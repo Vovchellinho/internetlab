@@ -6,7 +6,7 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {};
 const Input = ({placeholder, ...props}: IInputProps) => {
 	return (
 		<div className={styles.container}>
-			<input type="text" id="username" autoComplete="off" autoFocus required {...props} />
+			<input type="text" id="username" autoComplete="off" required {...props} />
 			{ placeholder && <label className={styles.textLabel}>{placeholder}</label>}
 		</div>
 	);

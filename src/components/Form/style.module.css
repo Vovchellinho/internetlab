@@ -18,21 +18,31 @@
 
 .form {
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	gap: 10px;
 }
 
 .formRow {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	flex-direction: row;
-	flex-wrap: wrap;
 	width: 100%;
+	gap: 15px;
 }
 
 .formRow > * {
-	width: 384px;
+	max-width: 384px;
+	width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+	.formRow {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 @media screen and (max-width: 375px) {

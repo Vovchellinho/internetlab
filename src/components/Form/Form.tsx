@@ -1,6 +1,7 @@
 import Button from "@UI/Button";
 import styles from "./style.module.css";
 import Input from "@UI/Input";
+import Checkbox from "@UI/Checkbox";
 
 const Form = () => {
 	return (
@@ -13,7 +14,7 @@ const Form = () => {
 						<Input placeholder="Телефон"/>
 					</div>
 					<div className={styles.formRow}>
-						<Input type="checkbox" value="Согласен, отказываюсь" />
+						<Checkbox>Согласен, отказываюсь</Checkbox>
 						<div>
 							<Button mode="blue" value="Отправить" />
 						</div>

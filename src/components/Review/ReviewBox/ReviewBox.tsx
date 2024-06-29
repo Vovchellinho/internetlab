@@ -49,7 +49,7 @@ const ReviewBox = () => {
 	const itemRef = useRef<HTMLLIElement>(null);
 
 	const nextItem = () => {
-		if (boxRef.current!.scrollLeft + boxRef.current!.clientWidth  < boxRef.current!.scrollWidth - itemRef.current!.clientWidth) {
+		if (boxRef.current!.scrollLeft + boxRef.current!.clientWidth < boxRef.current!.scrollWidth - itemRef.current!.clientWidth) {
 			boxRef.current!.scrollLeft = boxRef.current!.scrollLeft + itemRef.current!.clientWidth;
 		} else {
 			boxRef.current!.scrollLeft = 0;
@@ -65,23 +65,24 @@ const ReviewBox = () => {
 	};
 
 	return(
-		<div className={styles.containerReviewBox}>
-			<div className={styles.containerArrow + ' ' + styles.leftArrow}>
-				<div className={styles.arrow} onClick={prevItem} />
-			</div>
-			<div className={styles.container} ref={boxRef}>
-				{reviews.map((item) =>
-					<li key={item.id} className={styles.itemReview} ref={itemRef}>
-						<ReviewItem {...item} />
-					</li>
+		<>
+			<div className={styles.containerReviewBox}>
+				<div className={styles.containerArrow + ' ' + styles.leftArrow}>
+					<div className={styles.arrow} onClick={prevItem} />
+				</div>
+				<div className={styles.container} ref={boxRef}>
+					{reviews.map((item) =>
+						<li key={item.id} className={styles.itemReview} ref={itemRef}>
+							<ReviewItem {...item} />
+						</li>
 
-				)}
+					)}
+				</div>
+				<div className={styles.containerArrow}>
+					<div className={styles.arrow} onClick={nextItem} />
+				</div>
 			</div>
-			<div className={styles.containerArrow}>
-				<div className={styles.arrow} onClick={nextItem} />
-			</div>
-		</div>
-
+		</>
 	);
 }
 

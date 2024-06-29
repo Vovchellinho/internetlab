@@ -75,10 +75,6 @@ section > div {
 }
 
 @media screen and (max-width: 768px) {
-	.header {
-		font-size: 24px;
-		line-height: 32px;
-	}
 	.textBlock > h3 {
 		font-size: 20px;
 		line-height: 24px;
@@ -95,5 +91,12 @@ section > div {
 	}
 	.textBlock {
 		text-align: center;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.header {
+		font-size: 24px;
+		line-height: 32px;
 	}
 }

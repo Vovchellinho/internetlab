@@ -144,6 +144,10 @@
 	text-align: center;
 }
 
+.buttonContainer {
+	width: 251px;
+}
+
 @media screen and (max-width: 768px) {
 	.navigation > ul {
 		display: none;

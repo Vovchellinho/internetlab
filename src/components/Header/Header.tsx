@@ -30,7 +30,9 @@ const Header = () => {
 							<h1>Говорят, никогда не поздно сменить профессию</h1>
 							<p>Сделай круто тестовое задание и у тебя получится</p>
 						</div>
-						<Button value="Проще простого!" type="button" />
+						<div className={styles.buttonContainer}>
+							<Button value="Проще простого!" type="button" />
+						</div>
 					</div>
 				</div>
 			</div>

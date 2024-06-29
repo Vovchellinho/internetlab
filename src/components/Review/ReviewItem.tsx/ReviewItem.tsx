@@ -12,7 +12,13 @@ interface TReviewItemProps extends TReview {};
 const ReviewItem = ({...review}: TReviewItemProps) => {
 	return (
 		<div className={styles.reviewContainer}>
-			<h3>{review.name}</h3>
+			<div className={styles.header}>
+				<img src={review.avatar} alt={`Аватар пользователя ${review.name}`} />
+				<div>
+					<div className={styles.name}>{review.name}</div>
+					<div className={styles.city}>{review.city}</div>
+				</div>
+			</div>
 			<p>{review.reviewText}</p>
 		</div>
 	);

@@ -24,7 +24,6 @@
 }
 
 .status > img {
-	background-image: url("../../../assets/icons/plus.png");
 	filter: grayscale(100%);
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;

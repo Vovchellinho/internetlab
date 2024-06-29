@@ -16,7 +16,7 @@
 	color: var(--black);
 }
 
-.buttonContainer:not(.blueButton) {
+.buttonContainer:not(.blueButton):hover {
 	background-color: var(--white);
 	border: 1px solid var(--mid-grey);
 }

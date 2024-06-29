@@ -1,12 +1,14 @@
 import Header from "@components/Header";
+import HowItWorks from "@components/HowItWorks";
 
 const App = () => {
 	return (
-		<div>
+		<>
 			<Header />
-			<h1>asdasdasdasdasd scasc</h1>
-			<span>sfaf fsa dsad asd s</span>
-		</div>
+			<main>
+				<HowItWorks />
+			</main>
+		</>
 	);
 }
 

@@ -6,13 +6,23 @@ const Header = () => {
 		<header className={styles.headerContainer}>
 			<div className="center-content">
 				<nav className={styles.navigation}>
-					<span>testLab</span>
+					<div className={styles.logoContainer}>
+						<div className={styles.logo}>
+							<span className={styles.blue}/>
+							<span className={styles.white}/>
+						</div>
+						<span>testLab</span>
+					</div>
 					<ul className={styles.navigationLinks}>
 						<li><a href="/">Как это работает</a></li>
 						<li><a href="/">3-й блок</a></li>
 						<li><a href="/">Вопросы и ответы</a></li>
 						<li><a href="/">Формы</a></li>
 					</ul>
+					<div className={styles.drawerButton}>
+						<div />
+						<div />
+					</div>
 				</nav>
 				<div className={styles.content}>
 					<div className={styles.textBlock}>

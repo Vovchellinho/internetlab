@@ -10,7 +10,7 @@ section > div {
 	gap: 30px;
 }
 
-h2 {
+.header {
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 56px;
@@ -75,7 +75,7 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-	h2 {
+	.header {
 		font-size: 24px;
 		line-height: 32px;
 	}

@@ -6,7 +6,7 @@ const HowItWorks = () => {
 	return (
 		<section>
 			<div className="center-content">
-				<h2>Как это работает</h2>
+				<h2 className={styles.header}>Как это работает</h2>
 				<ul className={styles.listItems}>
 					<ListItem mode="waiting" />
 					<ListItem mode="deliveryTrack" />

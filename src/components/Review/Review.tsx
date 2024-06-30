@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 const Review = () => {
 	return (
-		<section className={styles.container}>
+		<section className={styles.container} id="review-section">
 			<div className="center-content">
 				<h2>Отзывы</h2>
 				<ReviewBox />

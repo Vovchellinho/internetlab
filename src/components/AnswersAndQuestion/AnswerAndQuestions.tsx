@@ -35,7 +35,7 @@ const QAA: TAnswerQuestion[] = [
 
 const AnswerAndQuestions = () => {
 	return (
-		<section className={styles.container}>
+		<section className={styles.container} id="answer-and-questions-section">
 			<div className="center-content">
 				<h2>Вопросы и ответы</h2>
 				<ul className={styles.questionsList}>

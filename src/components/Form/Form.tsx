@@ -5,7 +5,7 @@ import Checkbox from "@UI/Checkbox";
 
 const Form = () => {
 	return (
-		<section className={styles.container}>
+		<section className={styles.container} id="form-section">
 			<div className="center-content">
 				<h2>Отправь форму</h2>
 				<form className={styles.form}>

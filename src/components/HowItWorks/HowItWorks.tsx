@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 
 const HowItWorks = () => {
 	return (
-		<section>
+		<section id="how-it-works-section">
 			<div className="center-content">
 				<h2 className={styles.header}>Как это работает</h2>
 				<ul className={styles.listItems}>

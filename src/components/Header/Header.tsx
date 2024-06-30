@@ -14,10 +14,10 @@ const Header = () => {
 						<span>testLab</span>
 					</div>
 					<ul className={styles.navigationLinks}>
-						<li><a href="/">Как это работает</a></li>
-						<li><a href="/">3-й блок</a></li>
-						<li><a href="/">Вопросы и ответы</a></li>
-						<li><a href="/">Формы</a></li>
+						<li><a href="#how-it-works-section">Как это работает</a></li>
+						<li><a href="#review-section">3-й блок</a></li>
+						<li><a href="#answer-and-questions-section">Вопросы и ответы</a></li>
+						<li><a href="#form-section">Форма</a></li>
 					</ul>
 					<div className={styles.drawerButton}>
 						<div />

@@ -1,6 +1,7 @@
 {
 	"name": "internetlab",
 	"version": "0.1.0",
+	"homepage": "https://vovchellinho.github.io/internetlab",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.17.0",

@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid var(--light-gray);
+	height: 88px;
+}
+
+.container > span {
+	color: var(--black);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+}

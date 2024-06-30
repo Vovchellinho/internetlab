@@ -1,4 +1,6 @@
 import Button from "@UI/Button";
+import Logo from "@components/Logo";
+import Burger from "@components/Burger";
 import styles from "./style.module.css";
 
 const Header = () => {
@@ -6,23 +8,14 @@ const Header = () => {
 		<header className={styles.headerContainer}>
 			<div className="center-content">
 				<nav className={styles.navigation}>
-					<div className={styles.logoContainer}>
-						<div className={styles.logo}>
-							<span className={styles.blue}/>
-							<span className={styles.white}/>
-						</div>
-						<span>testLab</span>
-					</div>
+					<Logo />
 					<ul className={styles.navigationLinks}>
 						<li><a href="#how-it-works-section">Как это работает</a></li>
 						<li><a href="#review-section">3-й блок</a></li>
 						<li><a href="#answer-and-questions-section">Вопросы и ответы</a></li>
 						<li><a href="#form-section">Форма</a></li>
 					</ul>
-					<div className={styles.drawerButton}>
-						<div />
-						<div />
-					</div>
+					<Burger />
 				</nav>
 				<div className={styles.content}>
 					<div className={styles.textBlock}>

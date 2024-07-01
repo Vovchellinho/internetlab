@@ -50,12 +50,13 @@
 	transform: rotate(45deg);
 }
 
-.questionContainer:hover > h3 {
-	color: var(--primary);
-}
-
-.questionContainer:hover > .status > img {
-	filter: invert(31%) sepia(89%) saturate(2439%) hue-rotate(212deg) brightness(95%) contrast(92%);
+@media (any-hover: hover) {
+	.questionContainer:hover > h3 {
+		color: var(--primary);
+	}
+	.questionContainer:hover > .status > img {
+		filter: invert(31%) sepia(89%) saturate(2439%) hue-rotate(212deg) brightness(95%) contrast(92%);
+	}
 }
 
 @media screen and (max-width: 375px) {

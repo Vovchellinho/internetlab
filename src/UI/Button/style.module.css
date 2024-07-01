@@ -16,11 +16,6 @@
 	color: var(--black);
 }
 
-.buttonContainer:not(.blueButton):hover {
-	background-color: var(--white);
-	border: 1px solid var(--mid-grey);
-}
-
 .buttonContainer.blueButton {
 	background-color: var(--primary);
 }
@@ -29,7 +24,13 @@
 	color: var(--white);
 }
 
-.buttonContainer.blueButton:hover {
-	background-color: var(--primary-hover);
-	color: var(--white);
+@media (any-hover: hover) {
+	.buttonContainer:not(.blueButton):hover {
+		background-color: var(--white);
+		border: 1px solid var(--mid-grey);
+	}
+	.buttonContainer.blueButton:hover {
+		background-color: var(--primary-hover);
+		color: var(--white);
+	}
 }

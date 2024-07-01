@@ -53,9 +53,11 @@
 	transform: rotate(180deg);
 }
 
-.arrow:hover {
-	transform: rotate(135deg) scale(1.05);
-	border-color: var(--primary);
+@media (any-hover: hover) {
+	.arrow:hover {
+		transform: rotate(135deg) scale(1.05);
+		border-color: var(--primary);
+	}
 }
 
 @media screen and (max-width: 1070px) {

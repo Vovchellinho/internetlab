@@ -1,10 +1,30 @@
 .checkboxContainer {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
+    border-radius: 4px;
 	gap: 10px;
 	cursor: pointer;
+}
+
+.checkboxContainer.hasError {
+	border: 1px solid var(--dangerous);
+	padding: 5px;
+}
+
+.checkboxContainer.hasError::after {
+	content: "";
+	position: absolute;
+	right: 5px;
+	top: calc(50% - 10px);
+	width: 20px;
+	height: 20px;
+	background-image: url("../../assets/icons/error.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
 }
 
 .inputContainer {
@@ -45,4 +65,14 @@
 	font-size: 16px;
 	line-height: 28px;
 	color: var(--black);
+}
+
+.error {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	color: var(--dangerous);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
 }

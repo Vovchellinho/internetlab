@@ -1,7 +1,5 @@
 .container {
 	position: relative;
-	margin-top: 15px;
-	margin-bottom: 25px;
 }
 
 .textLabel {
@@ -30,30 +28,36 @@
 	border: 2px solid var(--extralight-gray);
 }
 
+.container.hasError > input {
+	border: 1px solid var(--dangerous);
+	padding: 5px;
+}
+
+.container.hasError::after {
+	content: "";
+	position: absolute;
+	right: 5px;
+	top: calc(50% - 10px);
+	width: 20px;
+	height: 20px;
+	background-image: url("../../assets/icons/error.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
 .container > input:focus ~ .textLabel, .container > input:not(:focus):valid ~ .textLabel {
 	top: 10px;
 	font-size: 14px;
 	line-height: 24px;
 }
 
-
-/* .container > input {
-	width: 100%;
-	height: 64px;
-	border-radius: 4px;
-	background-color: var(--extralight-gray);
-	outline: none;
-	border: 2px solid var(--extralight-gray);
-}
-
-.container > input::placeholder {
-	color: var(--dark-gray);
+.error {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	color: var(--dangerous);
+	font-size: 12px;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
-} */
-
-/* input:focus > input::placeholder {
-	display: block;
-	color: red;
-} */
+	line-height: 16px;
+}

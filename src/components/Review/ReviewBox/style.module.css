@@ -5,19 +5,20 @@
 	justify-content: center;
 	flex-direction: row;
 	width: 100%;
+	max-width: 1238px;
+	min-height: 316px;
 }
 
 .container {
 	display: flex;
-	gap: 50px;
-	align-items: center;
+	align-items: flex-start;
+	justify-content: space-around;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
-	width: 100%;
-	scroll-padding-right: 20px;
 	scroll-behavior: smooth;
 	list-style-type: none;
-	padding: 20px;
+	height: 100%;
+	min-height: inherit;
 }
 
 .container::-webkit-scrollbar {
@@ -25,26 +26,31 @@
 }
 
 .itemReview {
-	flex-shrink: 0;
-	scroll-snap-align: end;
+	flex: 0 0 calc(100% / 3);
+	scroll-snap-align: start;
 	scroll-snap-stop: always;
+	cursor: pointer;
+	padding: 25px 20px;
+	transition: transform 0.3s;
 }
 
 .containerArrow {
 	display: flex;
-	width: 200px;
+	width: 70px;
 	align-items: center;
 	justify-content: center;
-	height: calc(100% - 20px);
+	height: 100%;
+	min-height: inherit;
+	cursor: pointer;
 }
 
 .arrow {
-	height: 17px;
-	width: 17px;
+	height: 19px;
+	width: 19px;
 	border-left: 2px solid;
 	border-top: 2px solid;
+	border-top-left-radius: 4px;
 	border-color: var(--mid-grey);
-	cursor: pointer;
 	transform: rotate(135deg);
 	transition: 0.3s;
 }
@@ -53,28 +59,40 @@
 	transform: rotate(180deg);
 }
 
+.scrollPoints {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+}
+
 @media (any-hover: hover) {
-	.arrow:hover {
+	.containerArrow:hover > .arrow {
 		transform: rotate(135deg) scale(1.05);
 		border-color: var(--primary);
 	}
-}
-
-@media screen and (max-width: 1070px) {
-	.container {
-		width: calc(100% - 200px);
+	.itemReview:hover {
+		transform: scale(1.01);
 	}
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 800px) {
 	.containerArrow {
 		display: none;
 	}
-	.container {
-		width: 100%;
+	.itemReview {
+		flex: 0 0 calc(100% / 2);
 	}
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 500px) {
+	.containerArrow {
+		display: none;
+	}
 	.itemReview {
-		scroll-snap-align: center;
+		flex: 0 0 calc(100%);
 	}
 }

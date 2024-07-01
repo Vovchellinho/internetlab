@@ -1,0 +1,17 @@
+.listPoints {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+
+.point {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background-color: var(--mid-grey);
+}
+
+.point.active {
+	background-color: var(--primary);
+}

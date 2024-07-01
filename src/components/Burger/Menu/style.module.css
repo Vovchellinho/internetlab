@@ -17,6 +17,10 @@
 }
 
 .navigationLinks > li {
+	width: 100%;
+}
+
+.navigationLinks > li > a {
 	display: flex;
     align-items: center;
 	justify-content: space-between;
@@ -24,9 +28,13 @@
     height: 50px;
 	padding: 10px 0px;
 	border-bottom: 1px solid var(--light-gray);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	color: var(--gray)
 }
 
-.navigationLinks > li:after {
+.navigationLinks > li > a:after {
 	content: "";
 	position: relative;
 	right: 0;
@@ -39,11 +47,4 @@
 	cursor: pointer;
 	transform: rotate(135deg);
 	transition: 0.3s;
-}
-
-.navigationLinks > li > a {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
-	color: var(--gray)
 }

@@ -24,6 +24,16 @@
 	color: var(--white);
 }
 
+.buttonContainer:not(.blueButton):active {
+	background-color: var(--white);
+	border: 1px solid var(--mid-grey);
+}
+
+.buttonContainer.blueButton:active {
+	background-color: var(--primary-hover);
+	color: var(--white);
+}
+
 @media (any-hover: hover) {
 	.buttonContainer:not(.blueButton):hover {
 		background-color: var(--white);

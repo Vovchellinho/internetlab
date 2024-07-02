@@ -7,10 +7,19 @@
 	background-image: url(../../assets/images/header_bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-blend-mode: multiply;
-	background-color: var(--primary);
-	background-position: center;
-	filter: opacity(80%);
+	z-index: 0;
+	background-position: center top;
+}
+
+.headerContainer::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(42, 108, 234, 0.8);
 }
 
 .navigation {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/internetlab/static/css/main.7b0fe025.css",
+    "main.css": "/internetlab/static/css/main.b280a35a.css",
     "main.js": "/internetlab/static/js/main.eb910ffd.js",
     "static/media/header_bg.png": "/internetlab/static/media/header_bg.21400d73ff9f0c529fee.png",
     "static/media/GraphikLCG-BoldItalic.eot": "/internetlab/static/media/GraphikLCG-BoldItalic.b756b55712c56d3769ad.eot",
@@ -78,11 +78,11 @@
     "static/media/GraphikLCG-Thin.woff2": "/internetlab/static/media/GraphikLCG-Thin.1fb21de006aaa091fd82.woff2",
     "static/media/track.png": "/internetlab/static/media/track.197ed37341fce55a2a5b.png",
     "index.html": "/internetlab/index.html",
-    "main.7b0fe025.css.map": "/internetlab/static/css/main.7b0fe025.css.map",
+    "main.b280a35a.css.map": "/internetlab/static/css/main.b280a35a.css.map",
     "main.eb910ffd.js.map": "/internetlab/static/js/main.eb910ffd.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b0fe025.css",
+    "static/css/main.b280a35a.css",
     "static/js/main.eb910ffd.js"
   ]
 }

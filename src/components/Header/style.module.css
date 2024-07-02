@@ -8,7 +8,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 0;
-	background-position: center top;
+	background-position: center center;
+	position: relative;
+	min-width: 320px;
 }
 
 .headerContainer::before {
